@@ -1,0 +1,200 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+h3 {
+    font-size: 15px;
+    margin-bottom: 5px;
+   
+}
+
+h4, h5, p {
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.container {
+    width: 900px;
+    margin: auto;
+    border: 1px solid black;
+}
+
+/*CABECERA*/
+.header {
+    width: 100%;
+    height: 80px;   
+    background: #E5E5E5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.button {
+    width: 150px;
+    height: 50px;
+    font-size: 12px;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    background: #E5E5E5;
+    cursor: pointer;
+}
+
+.button:hover {
+    font-size: 15px;
+}
+
+
+/*CONTENIDO PRINCIPAL*/
+.main {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 10px;
+    padding-top: 20px;
+    background: whitesmoke;
+}
+
+/*CONTENEDOR DEL CARD*/
+.card {
+    position: relative;
+    width: 200px;
+    border: 1px solid rgb(219, 214, 214);
+    padding: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    background: white;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 5px 1px gray;
+}
+
+.buttons-container {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+}
+
+.button-card {
+    width: 40px;
+    height: 20px;
+    font-size: 10px;
+    background: white;
+    border: none;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card:hover .button-card {
+    visibility: visible;
+}
+
+.button-card:hover {
+    cursor: pointer;
+}
+
+.img-button {
+    width: 12px;
+    height: 12px;
+}
+
+.info-card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.modal-container {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.452);
+    position: fixed;
+    z-index: 10;
+    overflow: auto;
+    left: 0;
+    top: 0;
+    display: none;
+}
+
+ .modal-edit {
+    width: 600px;
+    padding: 20px;
+    margin: auto;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+} 
+
+.header-modal {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+input, select {
+    width: 270px;
+    height: 40px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
+.buttons-modal {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.close-modal {
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    background: none;
+}
+
+.close-modal:hover {
+    cursor: pointer;
+    background: skyblue;
+    border-radius: 5px;
+}
+
